@@ -1,0 +1,127 @@
+body{
+    background-color:beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+    text-align: center;
+    color: cadetblue;
+}
+h3{
+    text-align: center;
+    color: cadetblue;
+}
+fieldset{
+    width:500px;
+    background-color:rgb(250, 250, 231);
+}
+.inputblock{
+    width: 75%;
+    margin-top: 6px;
+}
+table{
+    width: 80%;
+    margin: 20px auto;
+}
+table{
+    text-align: center;
+    border-collapse: collapse;
+    border:1px grey solid;
+}
+th{
+    font-weight:300;
+    color:rgb(253, 236, 236);
+    padding: 5px;
+    font-size:20px;
+    background-color:rgb(37, 119, 122);
+}
+table.list{
+    text-align: center;
+    width: 100%;
+}
+td{
+    border: 1px solid rgb(236, 219, 219);
+    text-align: left;
+    padding: 0px 0px;
+    text-align: center;
+    font-size: 100%;
+}
+
+tr:nth-child(even){
+    background-color: rgb(252, 244, 244); 
+}
+#myinput{
+    float:right;
+    width:30%;
+}
+#myinput:focus{
+    background-color:rgb(229, 246, 212);
+}
+input[type="text"],input[type="date"],select{
+    width:91%;
+    padding:12px 20px;
+    margin:8px 0;
+    display: inline-block;
+    border: 1px solid rgb(165,161,161);
+    border-radius: 4px;
+}
+.nowrap{
+    white-space:nowrap;
+}
+label{
+    display: inline;
+    text-align: right;
+    width:150px;
+    
+}
+.mysubmit{
+    background-color:rgb(100, 192, 196);
+    color: white;
+}
+button{
+    /* background:#eee; */
+    padding:6px 12px;
+    margin:15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+#edit{
+    background-color: #cae3f3;
+}
+#delete{
+    background-color: rgb(241, 202, 202);
+}
+#edit:hover{
+    background-color: rgb(51, 158, 224);
+    color: bisque;
+}
+#delete:hover{
+    background-color:red;
+    color:beige;
+}
+button:hover{
+    background-color:lightcoral ;
+    color:black;
+}
+#searchfieldset{
+    display: inline-block;
+    margin : 10px;
+    margin-top:-0.1%;
+}
+fieldset{
+    display:inline;
+    width: 30%;
+}
+#admincomments{
+    height: fit-content;
+}
+#textarr{
+    display: flex;
+    align-items: center;
+}
+.sea{
+    background-color: cadetblue;
+}

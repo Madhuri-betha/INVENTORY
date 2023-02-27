@@ -1,0 +1,12 @@
+{
+    "admins":[
+        {
+        "id":"madhu",
+        "password":"p1"
+        },
+        {
+            "id":"vamsi",
+            "password":"p3"
+        }
+    ]
+}

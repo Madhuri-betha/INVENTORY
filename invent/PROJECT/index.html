@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Inventory Management System</h2>
+    <!-- <table>
+        <tr> -->
+    <div style="display: flex;">
+        <fieldset>
+            <h3>Add new data here</h3>
+            <form autocomplete="on" id="myform" onsubmit="validate(event)">
+                <div>
+                    <label for="category">Category:
+                        <select id="category" name="category"  onchange="displaycategorybar(this.value)">
+                            <option value="" class="inputblock">select</option>
+                            <option value="other">other</option>
+                        </select>
+                        <label for="newcategory" id="newcategorytext" style="display:none">Add new category:</label><input type="text" style="display:none;" placeholder="enter new category here" id="newcategorybar" name="newcategory" class="inputblock">
+
+                    </label>
+                </div>
+                    <label for="userid">UserId:<input type="text" name="userid" id="userid" class="inputblock" ></label>
+                
+                
+                    <label for="model">Model:<input type="text" name="model" id="model" class="inputblock" ></label>
+
+             
+                    <label for="serial">Serial No:<input type="text" name="serial" id="serial" class="inputblock" ></label>
+
+                    <label for="date">Date:<input type="date" name="date" id="date" class="inputblock" placeholder="DD-MM-YYYY"></label>
+                <div class="form_action--button">
+                    <button id="submit" class="mysubmit">Submit</button>
+                </div>
+            </form>
+           
+        </fieldset>
+
+        <fieldset id="searchfieldset">
+            <h3>Search data here</h3>
+            <form  id="searchitems">
+                &nbsp;<label for="idsearch" id="inputblock">Id : <input type="text" id="idsearch" class="filterbox"
+                        name="idsearch"></label>
+                <span>
+                    <label for="category" id="inputblock" class="filterbox">Category:
+                        <select id="searchb" name="category">
+                            <option value="other"></option>
+                           
+                        </select>
+                    </label>
+                </span>
+
+                <label for="userid" id="inputblock">UserId:<input type="text" id="userid" name="userid"
+                        class="filterbox"></label>
+                <span>
+                    <label for="model" id="inputblock">Model:<input type="text" id="model" name="model"
+                            class="filterbox"></label>
+                </span>
+
+                <span>
+                    <label for="serial" id="inputblock">Serial No:<input type="text" id="serial" name="serial"
+                            class="filterbox"></label>
+                </span>
+
+                <span>
+                    <label for="date" id="inputblock">Date:<input type="date" id="date" name="date"
+                            class="filterbox"></label>
+                </span>
+
+                <button type="submit" id="sea" class="mysubmit">Search</button>
+
+
+            </form>
+            <button id="resetitems" class="mysubmit">reset</button class="filterbox">
+
+        </fieldset>
+
+        <fieldset id="admincomments">
+            <h3>Add comments</h3>
+            <form id="commentform">
+                <label for="adminenterid">Id:</label><input type="text" id="adminenterid" name="commentid">
+                <label for="adminenterserial">Serial:</label><input type="text" id="adminenterserial"
+                    name="commentserial">
+                <div id="textar">
+                    <label for="adminentercomment">Comments</label><input type="text" rows="4" cols="50" name="comment"
+                         id="adminentercomment">
+                </div>
+
+            </form>
+            <button id="commentsubmit" class="mysubmit">Submit</button>
+        </fieldset>
+
+    </div>
+
+   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" title="Type in a name">
+     
+    <table class="list" id="storeList">
+
+    </table>
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

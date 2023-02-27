@@ -1,0 +1,29 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table {
+    display: table;
+    padding: 5px;
+    border-collapse: collapse;
+    text-align: center;
+}
+thead th{
+   background-color: rgb(170, 28, 151);
+   color: white;
+   padding: 1%;
+}
+tr {
+    display: table-row;
+    padding: 5px;
+}
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+  }
+td {
+    display: table-cell;
+    padding: 5px;
+    width: 150px;
+    border:white solid 1px;
+    margin: 5px;
+}

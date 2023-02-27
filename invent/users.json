@@ -1,0 +1,17 @@
+{
+    "users": [
+      {
+        "id": "madhu",
+        "password": "p1"
+      },
+      {
+        "id": "lolly",
+        "password": "p2"
+      },
+      {
+        "id": "vamsi",
+        "password": "p3"
+      }
+    ]
+  }
+  

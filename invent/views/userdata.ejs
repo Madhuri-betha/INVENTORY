@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="userdata.css">
+</head>
+
+<body>
+   <div>
+    <h3><%- filtereduser[0].userid %></h3>
+    <table id="ttable">
+        <thead id="tthead">
+        <tr>
+            <th>Id</th>
+            <th>Category</th>
+            <th>User id</th>
+            <th>Model</th>
+            <th>Serial</th>
+            <th>date</th>
+            <th>Problems</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="ttbody">
+        <% filtereduser.forEach(function(user){ %>
+        <tr>
+           <td><%- user.id %></td>
+           <td><%- user.category %></td>
+           <td><%- user.userid %></td>
+           <td><%- user.model %></td>
+           <td><%- user.serial %></td>
+           <td><%- user.date %></td>
+           <td><input type="text" style="padding:5px;" id="problemdata"></td>
+           <td><button id="problem" onclick="fun(this)">Submit</button></td>
+        </tr>
+        <%});%>
+    </tbody>
+    </table>
+</div>
+</body>
+ <script src="userdata.js"></script>
+</html>
+<!-- <script>
+    // fetch("http://localhost:9000/data").then((response) => response.json()
+    // ).then((data) => { 
+    //     let tbody = document.getElementById("tdata");
+    //     data.inventory.forEach(ele=>{
+    //         let tr = document.createElement("tr")
+    //         for 
+    //     })
+    //  })
+    url = "http://localhost:9000/data"
+    async function geturl(url) {
+        const response = await fetch(url)
+        const data = await response.json()
+        console.log(data);
+        document.getElementById("")
+        show(data);
+    }
+    geturl(url);
+    function show(data) {
+        let tab =
+            `<tr>
+		<th>Id</th>
+		<th>Category</th>
+    <th>User Id</th>
+		<th>Model</th>
+		<th>Serial No</th>
+    <th>Date</th>
+
+		</tr>`;
+        for (let r of data.inventory) {   	// Loop to access all rows
+            tab += `<tr>
+	<td>${r.id} </td>
+	<td>${r.category}</td>
+  <td>${r.userid}</td>		
+	<td>${r.model}</td>
+	<td>${r.serial}</td>	
+  <td>${r.date}</td>
+
+</tr>`;
+        }
+        document.getElementById("tdata").innerHTML = tab; 	// Setting innerHTML as tab variable
+    }
+
+</script> -->
